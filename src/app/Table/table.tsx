@@ -96,7 +96,7 @@ export default function Table() {
   return (
     <>
       <h1 className="font-bold text-2xl text-center">THINGS TO DO WHEN BORED</h1>
-      <NTable aria-label="Activities Table">
+      <NTable className="py-6" aria-label="Activities Table">
         <TableHeader>
           {columns.map((column) => (
             <TableColumn key={column.key}>{column.label}</TableColumn>
