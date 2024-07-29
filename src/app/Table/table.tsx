@@ -51,7 +51,7 @@ export default function Table() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('/api/fetch');
+      const response = await fetch('/api/fetch', { cache: 'no-store' });
       const act: Activity[] = await response.json();
       setData(act);
     } catch (error) {
