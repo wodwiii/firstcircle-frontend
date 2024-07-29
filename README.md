@@ -2,6 +2,9 @@
 
 A React application built with Next.js and NextUI to display and manage boredom-killing activities. This project fetches activity data from an external API and presents it in a dynamic table. It features functionality to download the data in JSON or CSV formats, print the data to the console, and fetch new data on initial load and upon user request.
 
+## Live Web App
+You can access the web app: https://killyourboredom.vercel.app
+
 ## Technologies Used
 
 - [Next.js](https://nextjs.org/) - A React framework for building server-side rendered applications.
@@ -23,5 +26,3 @@ A React application built with Next.js and NextUI to display and manage boredom-
   npm run dev
 ```
 
-## Live Web Server
-Just visit it [(killboredom.vercell.app)]
