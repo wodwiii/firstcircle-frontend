@@ -95,11 +95,11 @@ export default function Table() {
 
   return (
     <>
-      <h1 className="font-bold text-2xl text-center">THINGS TO DO WHEN BORED</h1>
+      <h1 className="font-bold text-blue-700 text-2xl text-center pt-[10vh]">THINGS TO DO WHEN BORED</h1>
       <NTable className="py-6" aria-label="Activities Table">
         <TableHeader>
           {columns.map((column) => (
-            <TableColumn key={column.key}>{column.label}</TableColumn>
+            <TableColumn  className="text-blue-700" key={column.key}>{column.label}</TableColumn>
           ))}
         </TableHeader>
         <TableBody>
@@ -116,7 +116,7 @@ export default function Table() {
           ))}
         </TableBody>
       </NTable>
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-col lg:flex-row gap-4 ">
         <button
           className="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
           onClick={fetchData}
